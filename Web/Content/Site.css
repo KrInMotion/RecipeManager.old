@@ -27,6 +27,17 @@ textarea {
     margin-top: 20px;
 }
 
+/**/
+
+a {
+    color: #72c02c;
+}
+
+a:hover {
+    color: #72c02c;
+    text-decoration: underline;
+}
+
 /*Panels*/
 
 .panel,
@@ -44,4 +55,8 @@ textarea {
 
 .panel-green > .panel-heading {
     background: #2ecc71;
+}
+
+.panel .table {
+    margin-bottom:0;
 }
