@@ -1,0 +1,22 @@
+﻿@model IEnumerable<Web.ViewModels.CategoryViewModel>
+
+@{
+    ViewBag.Title = "Список категорий";
+}
+
+<div class="row margin-top-20">
+    <div class="col-md-3"></div>
+    <div class="col-md-6">
+        <div class="panel panel-green">
+            <div class="panel-heading">
+                <i class="fa fa-align-right"></i> Категории
+            </div>
+            <div class="panel-body">
+                <div id="category-table">
+                    @Html.Partial("_CategoryList", Model)
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3"></div>
+</div>

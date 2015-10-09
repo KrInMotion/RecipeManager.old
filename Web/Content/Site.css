@@ -22,3 +22,26 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+/*Panels*/
+
+.panel,
+.panel-heading {
+    border-radius:0;
+}
+
+.panel-heading {
+    color: #fff;
+    padding: 5px 15px;
+}
+.panel-green {
+    border-color: #2ecc71;
+}
+
+.panel-green > .panel-heading {
+    background: #2ecc71;
+}
