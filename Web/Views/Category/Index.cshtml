@@ -3,20 +3,31 @@
 @{
     ViewBag.Title = "Список категорий";
 }
+<div class="breadcrumbs">
+    <div class="container">
+        <h1 class="pull-left">Список категорий</h1>
+        <ul class="breadcrumb pull-right">
+            <li>@Html.ActionLink("Рецепты", "Index", "Home")</li>
+            <li class="active">Категории</li>
+        </ul>
+    </div>
+</div>
 
-<div class="row margin-top-20">
-    <div class="col-md-3"></div>
-    <div class="col-md-6">
-        <div class="panel panel-green">
-            <div class="panel-heading">
-                <i class="fa fa-align-right"></i> Категории
-            </div>
-            <div class="panel-body">
-                <div id="category-table">
-                    @Html.Partial("_CategoryList", Model)
+<div class="container">
+    <div class="row margin-top-20">
+        <div class="col-md-3"></div>
+        <div class="col-md-6">
+            <div class="panel panel-green">
+                <div class="panel-heading">
+                    <i class="fa fa-align-right"></i> Категории
+                </div>
+                <div class="panel-body">
+                    <div id="category-table">
+                        @Html.Partial("_CategoryList", Model)
+                    </div>
                 </div>
             </div>
         </div>
+        <div class="col-md-3"></div>
     </div>
-    <div class="col-md-3"></div>
 </div>
